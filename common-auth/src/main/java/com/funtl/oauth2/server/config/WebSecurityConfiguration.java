@@ -26,6 +26,7 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
     public BCryptPasswordEncoder passwordEncoder(){
 
         return  new BCryptPasswordEncoder() ;
+
     }
 
     @Override

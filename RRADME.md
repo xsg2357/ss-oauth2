@@ -5,7 +5,7 @@
 2.访问http://localhost:8080/oauth/authorize?client_id=client&response_type=code
 选择APProve 确认Authorizeh
 
-访问url：
+postman访问url：
 http://client:secret@localhost:8080/oauth/token
 
 授权码：
@@ -87,3 +87,7 @@ jdbc:
           `authentication` blob
         ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
     ```
+    
+Encoded password does not look like BCrypt
+解决方法：
+重新生成client_secret：$2a$10$OUxrM5gyxK.HqBAkb5AaseoDjWxACKZnFl8nSyW9j5RY4r5lAA1Ly

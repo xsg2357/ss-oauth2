@@ -16,8 +16,8 @@ spring:
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
     driver-class-name: com.mysql.cj.jdbc.Driver
-#    jdbc-url: jdbc:mysql://119.29.107.83:3306/oauth2?useUnicode=true&characterEncoding=utf-8&useSSL=false
-    url: jdbc:mysql://119.29.107.83:3306/oauth2?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    jdbc-url: jdbc:mysql://119.29.107.83:3306/oauth2?useUnicode=true&characterEncoding=utf-8&useSSL=false
+#    url: jdbc:mysql://119.29.107.83:3306/oauth2?useUnicode=true&characterEncoding=utf-8&useSSL=false
     username: root
     password: xsg435268
     hikari:
@@ -30,5 +30,14 @@ spring:
       connection-timeout: 30000
       connection-test-query: SELECT 1
 
+#      driver-class-name: com.mysql.cj.jdbc.Driver
+#      jdbc-url: jdbc:mysql://119.29.107.83:3306/oauth2?useUnicode=true&characterEncoding=utf-8&useSSL=false
+#      username: root
+#      password: xsg435268
+
 server:
   port: 8080
+
+mybatis:
+    type-aliases-package: com.funtl.oauth2.server.domain
+    mapper-locations: classpath:mapper/*.xml
