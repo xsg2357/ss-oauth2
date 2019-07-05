@@ -19,6 +19,7 @@
     <modules>
         <module>common_depens</module>
         <module>common-auth</module>
+        <module>common_resources</module>
         <!-- 工程模块请随着项目的不断完善自行添加 -->
     </modules>
 
@@ -39,9 +40,9 @@
 
     <developers>
         <developer>
-            <id>liwemin</id>
-            <name>Lusifer Lee</name>
-            <email>lee.lusifer@gmail.com</email>
+            <id>xsg</id>
+            <name>X s</name>
+            <email>1069342827@qq.com</email>
         </developer>
     </developers>
 
